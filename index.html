@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>01_URBAN LAUNDERETTE</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- jquery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<!-- swiper CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- script -->
+		<script defer="defer" src="js/header.js"></script>
+		<script defer="defer" src="js/main.js"></script>
+	</head>
+
+	<body>
+		<!-- 상단영역 -->
+		<header id="top">
+			<!--
+        div>h1+ul+ul
+        div>(h1>a)+(ul>li*5>h2+ul)+ul>li*2>a
+        div.inner>(h1.logo>a)+(ul.gnb>li*5>(h2>a)+ul.gnbsub>li*3>a)+(ul.enb>li*2>a)
+    -->
+			<div class="inner flex flexBetween">
+				<h1 class="logo"><a href="#">URBAN LAUNDERETTE</a></h1>
+				<div class="wgnb">
+					<a class="ham" href="#">
+						<span>메뉴보기</span>
+					</a>
+					<ul class="gnb">
+						<li class="gnbList">
+							<h2><a href="#">BRAND</a></h2>
+							<ul class="gnbSub">
+								<li><a href="#">CONCEPT</a></li>
+								<li><a href="#">DESIGN</a></li>
+								<li><a href="#">MEDIA</a></li>
+							</ul>
+						</li>
+						<li class="gnbList">
+							<h2><a href="#">BUSINESS</a></h2>
+							<ul class="gnbSub">
+								<li><a href="#">FOR BUSINESS</a></li>
+								<li><a href="#">POWERED BY MIELE</a></li>
+								<li><a href="#">GREEN CAMPAIGN</a></li>
+							</ul>
+						</li>
+						<li class="gnbList">
+							<h2><a href="#">SERVICE</a></h2>
+							<ul class="gnbSub">
+								<li><a href="#">SERVICE</a></li>
+								<li><a href="#">MAGAZINE</a></li>
+							</ul>
+						</li>
+						<li class="gnbList">
+							<h2><a href="#">STORE</a></h2>
+							<ul class="gnbSub">
+								<li><a href="#">STORE</a></li>
+								<li><a href="#">ONLINE SHOP</a></li>
+							</ul>
+						</li>
+						<li class="gnbList">
+							<h2><a href="#">CONTACT</a></h2>
+							<ul class="gnbSub">
+								<li><a href="#">VISIT</a></li>
+								<li><a href="#">REGISTER</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="enb flex">
+					<li><a href="#">KaKao login</a></li>
+					<li><a href="#">Sign up</a></li>
+				</ul>
+			</div>
+		</header>
+		<!-- 타이틀영역 -->
+		<div id="title" class="flex">
+			<div class="inner">
+				<div class="titleWrap">
+					<h2 class="h2">
+						<span class="mask">SUSTAINABLE LIFE STYLE</span>
+					</h2>
+					<div class="pcontainer">
+						<p class="mask">
+							지속가능한 미래를 위한
+							<span class="br"></span>
+							새로운 라이프스타일 어반런드렛
+						</p>
+					</div>
+					<div class="pcontainer">
+						<a href="#" class="viewPoint">VIEW MORE</a>
+					</div>
+				</div>
+				<div class="container">
+					<iframe
+						src="https://player.vimeo.com/video/626348459?muted=1&autoplay=1&autopause=0&loop=1&background=1"
+					></iframe>
+				</div>
+				<a
+					class="campaign"
+					href="https://urbanlaunderette.com/business/green-campaign/"
+					>KEEP CLEAN & GREEN</a
+				>
+			</div>
+			<span class="titleaside flex flexColumn flexAcenter flexBetween">
+				<a href="#" class="scroll">SCROLL</a>
+			</span>
+		</div>
+		<!-- 내용역역 -->
+		<main>
+			<!-- section>div>hgroup+div
+        section#service>div.inner>(hgroup>h2+h3)+div.contents
+        section#service>div.inner>(hgroup>h2.h5+h3.h2)+div.contents>(article*6>a>h4.h4+p.p)+a.more -->
+			<section id="service">
+				<div class="inner">
+					<hgroup>
+						<h2 class="h5">SERVICE</h2>
+						<h3 class="h2">ABOUT URBAN LAUNDERETTE</h3>
+					</hgroup>
+					<div class="contents flex flexBetween">
+						<article>
+							<a href="#">
+								<h4 class="h4">POWERED BY ‘MIELE’</h4>
+								<p class="p">
+									어반런드렛은 120년 전통의 독일 프리미엄 가전 브랜드, 밀레와
+									함께합니다. 밀레는 세계 최고 품질을 위해 최대 30,000 시간 동안
+									제품을 테스트하는 세계 유일의 브랜드입니다.
+								</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<h4 class="h4">THE WORLD’S HIGH QUALITY WASHING PROGRAM</h4>
+								<p class="p">
+									어반런드렛은 울 & 패딩 소재의 의류와 극세사 & 구스 이불 등
+									섬유별 최적의 세탁 프로그램을 제공하며, 민감성 섬유를 위한
+									국내 최초 무열 건조 코스를 제공합니다.
+								</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<h4 class="h4">ORGANIC LAUNDRY DETERGENT</h4>
+								<p class="p">
+									어반런드렛은 식물성 원료로 만든 천연 유래성분의 자연주의
+									세제만을 사용합니다. 소중한 우리 가족과 나의 피부에 직접 닿는
+									세탁물만큼은 더없이 안전하고 순해야 합니다.
+								</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<h4 class="h4">ORGANIC AROMA THERAPY</h4>
+								<p class="p">
+									품격있는 천연 아로마 오일을 통해 매장 내에서는 어반런드렛만의
+									편안하고 품격있는 향을 느끼실 수 있으며, 천연 울드라이어볼과
+									함께 아로마 건조 서비스를 이용하실 수 있습니다.
+								</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<h4 class="h4">THE CLEANEST SYSTEM</h4>
+								<p class="p">
+									소수의 화학물질은 사용 후 피부와 호흡기를 자극할 수 있습니다.
+									어반런드렛은 화학성분이 첨가된 물질을 사용하지 않으며, 천연
+									세척수를 통해 매일 드럼 세척을 진행합니다.
+								</p>
+							</a>
+						</article>
+						<article>
+							<a href="#">
+								<h4 class="h4">ORGANIC LAUNDRY PRODUCT</h4>
+								<p class="p">
+									환경은 우리가 사용하는 소유물이 아니라 우리와 함께 하는
+									것이기에, 어반런드렛 매장에서 사용하는 런드리백과 위생용품
+									등은 100% 생분해 되는 친환경적인 소재로 제작하고 있습니다.
+								</p>
+							</a>
+						</article>
+						<div class="view flex flexJcenter">
+							<a href="" class="viewPoint">VIEW MORE</a>
+						</div>
+					</div>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-01.jpg" alt="" />
+									</div>
+									<h4 class="h4">POWERED BY ‘MIELE’</h4>
+									<p class="p">
+										어반런드렛은 120년 전통의 독일 프리미엄 가전 브랜드, 밀레와
+										함께합니다. 밀레는 세계 최고 품질을 위해 최대 30,000 시간
+										동안 제품을 테스트하는 세계 유일의 브랜드입니다.
+									</p>
+								</a>
+							</article>
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-02.jpg" alt="" />
+									</div>
+									<h4 class="h4">THE WORLD’S HIGH QUALITY WASHING PROGRAM</h4>
+									<p class="p">
+										어반런드렛은 울 & 패딩 소재의 의류와 극세사 & 구스 이불 등
+										섬유별 최적의 세탁 프로그램을 제공하며, 민감성 섬유를 위한
+										국내 최초 무열 건조 코스를 제공합니다.
+									</p>
+								</a>
+							</article>
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-03.jpg" alt="" />
+									</div>
+									<h4 class="h4">ORGANIC LAUNDRY DETERGENT</h4>
+									<p class="p">
+										어반런드렛은 식물성 원료로 만든 천연 유래성분의 자연주의
+										세제만을 사용합니다. 소중한 우리 가족과 나의 피부에 직접
+										닿는 세탁물만큼은 더없이 안전하고 순해야 합니다.
+									</p>
+								</a>
+							</article>
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-04.jpg" alt="" />
+									</div>
+									<h4 class="h4">ORGANIC AROMA THERAPY</h4>
+									<p class="p">
+										품격있는 천연 아로마 오일을 통해 매장 내에서는
+										어반런드렛만의 편안하고 품격있는 향을 느끼실 수 있으며, 천연
+										울드라이어볼과 함께 아로마 건조 서비스를 이용하실 수
+										있습니다.
+									</p>
+								</a>
+							</article>
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-05.jpg" alt="" />
+									</div>
+									<h4 class="h4">THE CLEANEST SYSTEM</h4>
+									<p class="p">
+										소수의 화학물질은 사용 후 피부와 호흡기를 자극할 수
+										있습니다. 어반런드렛은 화학성분이 첨가된 물질을 사용하지
+										않으며, 천연 세척수를 통해 매일 드럼 세척을 진행합니다.
+									</p>
+								</a>
+							</article>
+							<article class="swiper-slide">
+								<a href="#">
+									<div class="imgWrap">
+										<img src="img/main-service-06.jpg" alt="" />
+									</div>
+									<h4 class="h4">ORGANIC LAUNDRY PRODUCT</h4>
+									<p class="p">
+										환경은 우리가 사용하는 소유물이 아니라 우리와 함께 하는
+										것이기에, 어반런드렛 매장에서 사용하는 런드리백과 위생용품
+										등은 100% 생분해 되는 친환경적인 소재로 제작하고 있습니다.
+									</p>
+								</a>
+							</article>
+						</div>
+						<div class="view flex flexJcenter">
+							<a href="" class="viewPoint">VIEW MORE</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section>div>h2+p+a
+        section#space>div>h2.h1+p.h2+a.viewMore -->
+			<section id="space">
+				<h2 class="h1">LIFE ARCHIVE SPACE</h2>
+				<img src="img/main-space-01.jpg" alt="" />
+				<div class="flex flexColumn flexJcenter">
+					<p class="h2">
+						SENSITIVE DESIGN AND <span class="br"></span>
+						COMFORTABLE LAUNDRY SPACE URBAN LANDERETTE
+					</p>
+					<a href="#" class="viewPoint"
+						>VIEW MORE<span class="pentagon"></span
+					></a>
+				</div>
+			</section>
+			<!-- section>hgroup+ul+a
+        section>(hgroup>h2+h3+h4)+(ul>li*3>h5+p)+a
+        section#brandStory>(hgroup>h2+h3+h4)+(ul>li*3>h5+p)+a.viewMore -->
+			<section id="brandStory">
+				<div class="inner flex flexColumn flexAcenter">
+					<hgroup>
+						<h2 class="h5">BRAND STORY</h2>
+						<h3>KEEP CLEAN AND GREEN</h3>
+						<h4>PIONEERS OF<span class="br"></span> ECO-FRIENDLY LAUNDRY</h4>
+					</hgroup>
+					<ul class="flex flexJcenter">
+						<li>
+							<svg
+								class="svg01"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								width="104.69px"
+								height="90px"
+								viewBox="0 0 104.69 90"
+								enable-background="new 0 0 104.69 90"
+								xml:space="preserve"
+								focusable="false"
+							>
+								<style type="text/css">
+									.st0 {
+										fill: none;
+										stroke: #222222;
+										stroke-width: 4;
+										stroke-miterlimit: 10;
+									}
+								</style>
+								<path
+									class="st0"
+									d="M51.91,16.62C64.81,16.62,65.67,2,65.67,2h17.2
+                          l18.92,34.4l-19.78,6.88V88H22.67V43.28L2.89,36.4L21.81,2h17.2c0,0,0.86,14.62,13.76,14.62"
+								></path>
+							</svg>
+							<h5>Keep</h5>
+							<p>
+								친환경적인 세탁으로 <span class="br"></span> 섬유를 더욱
+								오래도록 보호합니다
+							</p>
+						</li>
+						<li>
+							<svg
+								class="svg02"
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								width="100px"
+								height="100px"
+								viewBox="0 0 100 100"
+								style="enable-background: new 0 0 100 100"
+								xml:space="preserve"
+							>
+								<style type="text/css">
+									.st0 {
+										fill: none;
+										stroke: #222222;
+										stroke-width: 4;
+										stroke-miterlimit: 10;
+									}
+								</style>
+								<path class="st0" d="M50,15.9V0 M50,84.2V100"></path>
+								<path class="st0" d="M15.9,50H0 M84.2,50H100"></path>
+								<path
+									class="st0"
+									d="M25.9,25.9L14.6,14.6 M74.2,74.2l11.2,11.2"
+								></path>
+								<path
+									class="st0"
+									d="M25.9,74.2L14.6,85.4 M74.2,25.9l11.2-11.2"
+								></path>
+							</svg>
+							<h5>Clean</h5>
+							<p>
+								철저한 위생 관념으로 <span class="br"></span> 세탁 환경을 더욱
+								깨끗하게 유지합니다
+							</p>
+						</li>
+						<li>
+							<svg
+								class="svg03"
+								version="1.1"
+								focusable="false"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								width="99.2px"
+								height="102px"
+								viewBox="0 0 99.2 102"
+								enable-background="new 0 0 99.2 102"
+								xml:space="preserve"
+							>
+								<path
+									class="svg_path_line"
+									fill="none"
+									stroke="#222222"
+									stroke-width="4"
+									stroke-miterlimit="10"
+									stroke-linejoin="miter"
+									d="M25,3.5c0,0-22.9,27.4-22.9,48.4
+                            C2.1,64.4,12.4,74.6,25,74.6S47.9,64.3,47.9,51.7C47.9,31.6,25,3.3,25,3.3L25,3.4"
+								></path>
+								<path
+									fill="none"
+									stroke="#222222"
+									stroke-width="4"
+									stroke-miterlimit="10"
+									d="M25.1,76v26"
+								></path>
+								<path
+									class="svg_path_line"
+									fill="none"
+									stroke="#222222"
+									stroke-width="4"
+									stroke-miterlimit="10"
+									stroke-linejoin="miter"
+									d="M74.1,3.5c0,0-22.9,27.4-22.9,48.4
+                            C51.2,64.4,61.5,74.6,74.1,74.6S97,64.3,97,51.6C97,31.6,74.1,3.3,74.1,3.3L74.1,3.4"
+								></path>
+								<path
+									fill="none"
+									stroke="#222222"
+									stroke-width="4"
+									stroke-miterlimit="10"
+									d="M74.1,76v26"
+								></path>
+							</svg>
+							<h5>Green</h5>
+							<p>
+								어반런드렛은 환경과 자원 그리고 <span class="br"></span> 고객의
+								건강까지 생각합니다
+							</p>
+						</li>
+					</ul>
+					<a href="#" class="viewPoint"
+						>VIEW MORE <span class="pentagon"></span
+					></a>
+				</div>
+				<div class="mieleContainer flex flexAcenter">
+					<div class="mieleContent">
+						<h2><small>POWERED BY MIELE</small><br />PREMIUM BRAND 'MIELE'</h2>
+						<p>어반런드렛은 120년 전통의 명품 가전 밀레와 함께 합니다.</p>
+						<a href="#" class="viewPoint"
+							>VIEW MORE <span class="pentagon"></span
+						></a>
+					</div>
+				</div>
+			</section>
+			<!-- section>(div>hgroup+a)+img
+        section#register>(div>(hgroup>h2+h3+h4)+a.viewPoint>span.pentagon)+img -->
+			<section id="register" class="flex flexJcenter">
+				<div class="p_wrap flex flexColumn flexJcenter">
+					<hgroup>
+						<h2>REGISTER</h2>
+						<h3>
+							CONTACT <span class="br"></span> FOR MORE <span class="br"></span>
+							INFORMATION
+						</h3>
+						<h4>
+							어반런드렛에 대해 궁금하신가요? <br />
+							입력하신 정보를 바탕으로, 궁금하신 상담을 도와드립니다. <br />
+						</h4>
+					</hgroup>
+					<a href="#" class="viewPoint"
+						>VIEW MORE<span class="pentagon"></span
+					></a>
+				</div>
+				<div class="img_wrap">
+					<img src="img/main-register-01.jpg" alt="" />
+				</div>
+			</section>
+			<!-- 인스타그램
+        section>h2+ul>li*8>a
+        section#instagram>h2+ul>li*8>a -->
+			<section id="instagram" class="flex flexJcenter">
+				<div class="icontainer">
+					<h2>INSTAGRAM</h2>
+					<ul class="flex flexBetween flexWrap">
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta01.jpg" alt="" />
+									<figcaption>
+										6월 5일, 세계 환경의 날을 기념하여 텀블러를 가지고 방문해
+										주시는 고객님들께 음료 메뉴에 한하여 1,000원 할인 이벤트를
+										진행합니다. 많은 관심과 참여 부탁드립니다. 감사합니...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta02.jpg" alt="" />
+									<figcaption>
+										Hand-made pottery with earthy and natural rough texture from
+										the soil itself. #urbanlaunderette #어...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta03.jpg" alt="" />
+									<figcaption>
+										2022. 05. 19 (목) PM 3~9 휴무 안내 어반런드렛 더 테라스와 더
+										팩토리는 5월 19일 오후 3시에서 9시, 해당 기간 동안 시설 전체
+										대관으로 카페와 세탁소 운영...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta04.jpg" alt="" />
+									<figcaption>
+										어반테라피 티는 유자를 베이스로 모과, 귤껍질, 로즈마리가
+										블렌딩 된 비타민 차입니다. 순수한 유자 원물과 허브
+										추출만으로 유자의 고유의 향과 깔끔한 맛을 살린 어반런드렛 더
+										테라...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta05.jpg" alt="" />
+									<figcaption>
+										깊은 숲속의 나무와 흙, 풀잎 향이 어우러진 어반테라피의
+										시그니처 향은 지친 우리 일상에 편안함과 위로를 선사합니다.
+										어반테라피의 런드리 컬렉션, 세탁 세제와 섬유유연제를 함께
+										사...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta06.jpg" alt="" />
+									<figcaption>
+										Green Therapy #urbanlaundertte #어반런드렛...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta07.jpg" alt="" />
+									<figcaption>
+										어반테라피 런드리 컬렉션은 식물에서 유래한 성분을 베이스로
+										만든 친환경 세제와 섬유유연제 입니다. 자연에서 추출한 원료와
+										식물성 계면 활성제를 베이스로 만들어 매일 안심하고 사용할...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="">
+								<figure>
+									<img src="img/insta08.jpg" alt="" />
+									<figcaption>
+										Urban Therapy 라이프 스타일 브랜드 어반런드렛의 시그니처
+										향을 담은 ‘어반테라피(URBAN THERAPY)’ 라인이 어반런드렛 더
+										테라스에서 첫 ...
+									</figcaption>
+								</figure>
+							</a>
+						</li>
+					</ul>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<figure>
+										<img src="img/insta01.jpg" alt="" />
+										<figcaption>
+											6월 5일, 세계 환경의 날을 기념하여 텀블러를 가지고 방문해
+											주시는 고객님들께 음료 메뉴에 한하여 1,000원 할인 이벤트를
+											진행합니다. 많은 관심과 참여 부탁드립니다. 감사합니...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta02.jpg" alt="" />
+										<figcaption>
+											Hand-made pottery with earthy and natural rough texture
+											from the soil itself. #urbanlaunderette #어...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta03.jpg" alt="" />
+										<figcaption>
+											2022. 05. 19 (목) PM 3~9 휴무 안내 어반런드렛 더 테라스와
+											더 팩토리는 5월 19일 오후 3시에서 9시, 해당 기간 동안 시설
+											전체 대관으로 카페와 세탁소 운영...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta04.jpg" alt="" />
+										<figcaption>
+											어반테라피 티는 유자를 베이스로 모과, 귤껍질, 로즈마리가
+											블렌딩 된 비타민 차입니다. 순수한 유자 원물과 허브
+											추출만으로 유자의 고유의 향과 깔끔한 맛을 살린 어반런드렛
+											더 테라...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta05.jpg" alt="" />
+										<figcaption>
+											깊은 숲속의 나무와 흙, 풀잎 향이 어우러진 어반테라피의
+											시그니처 향은 지친 우리 일상에 편안함과 위로를 선사합니다.
+											어반테라피의 런드리 컬렉션, 세탁 세제와 섬유유연제를 함께
+											사...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta06.jpg" alt="" />
+										<figcaption>
+											Green Therapy #urbanlaundertte #어반런드렛...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta07.jpg" alt="" />
+										<figcaption>
+											어반테라피 런드리 컬렉션은 식물에서 유래한 성분을 베이스로
+											만든 친환경 세제와 섬유유연제 입니다. 자연에서 추출한
+											원료와 식물성 계면 활성제를 베이스로 만들어 매일 안심하고
+											사용할...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" alt="">
+									<figure>
+										<img src="img/insta08.jpg" alt="" />
+										<figcaption>
+											Urban Therapy 라이프 스타일 브랜드 어반런드렛의 시그니처
+											향을 담은 ‘어반테라피(URBAN THERAPY)’ 라인이 어반런드렛 더
+											테라스에서 첫 ...
+										</figcaption>
+									</figure>
+								</a>
+							</li>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="footerMob">
+				<div class="sticky">
+					<a href="#" class="shop">SHOP</a>
+					<a href="#" class="kakao">KAKAO</a>
+				</div>
+			</div>
+		</main>
+		<!-- 하단영역 -->
+		<!-- footer>div>(a*2)+a+div+div
+        footer#footer>div.inner>(a.shop+a.kakao)+a.goTop+div.footerTop+div.footerBottom
+        footer#footer>div.inner>(a.shop+a.kakao)+a.goTop+(div.footerTop>(div.topLeft>(div.footerTel>(p>a)+p*3>a)+(address>(p>span)+span*2))+(div.topRight>ul.footerSns>li*3>a))+(div.footerBottom>(ul.footerMenu>li*4>a)+a) -->
+		<footer id="footer">
+			<div class="inner">
+				<a href="#title" class="goTop"></a>
+				<div class="footerTop flex flexBetween flexWrap">
+					<div class="topLeft">
+						<h1 class="hide">어반런드렛</h1>
+						<div class="footerTel">
+							<p class="telHead">
+								어반런드렛 본사 (창업문의)<span class="br"
+									><a href="tel:1577-8725">1577-8725</a></span
+								>
+							</p>
+							<p>
+								어반런드렛 더 팩토리<span
+									><a href="tel:070-7717-0654">070-7717-0654</a></span
+								>
+							</p>
+							<p>
+								어반런드렛 더 테라스<span
+									><a href="tel:031-261-8725">031-261-8725</a></span
+								>
+							</p>
+							<p>
+								어반런드렛 서초/청담<span
+									><a href="tel:1644-5982">1644-5982</a></span
+								>
+							</p>
+						</div>
+						<address>
+							<p>
+								(주)제이피 이노베이션<span class="space"
+									>경기도 성남시 수정구 창업로42, 경기기업성장센터 819호</span
+								>
+							</p>
+							<span>사업자등록번호 456-87-00752</span
+							><span>대표이사 : 손수정</span>
+						</address>
+					</div>
+					<div class="topRight">
+						<ul class="footerSns flex">
+							<li>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+									<!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+									<path
+										d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+									></path>
+								</svg>
+								<a href="#">facebook</a>
+							</li>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24.66 24.66"
+								>
+									<defs>
+										<style>
+											.cls-1 {
+												fill: #fff;
+											}
+										</style>
+									</defs>
+									<g id="Layer_2" data-name="Layer 2">
+										<g id="Layer_1-2" data-name="Layer 1">
+											<path
+												class="cls-1"
+												d="M19.49,0H5.18A5.18,5.18,0,0,0,0,5.18V19.49a5.18,5.18,0,0,0,5.18,5.17H19.49a5.19,5.19,0,0,0,5.17-5.17V5.18A5.18,5.18,0,0,0,19.49,0ZM12.35,18.64h0a6.31,6.31,0,1,1,6.31-6.31A6.32,6.32,0,0,1,12.33,18.64ZM19,7.26a1.18,1.18,0,0,1-.22-2.35H19a1.18,1.18,0,0,1,0,2.35Z"
+											></path>
+											<circle
+												class="cls-1"
+												cx="12.33"
+												cy="12.33"
+												r="4.74"
+											></circle>
+										</g>
+									</g>
+								</svg>
+								<a href="#">instagram</a>
+							</li>
+							<li>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 8.14 10.64"
+								>
+									<defs>
+										<style>
+											.cls-1 {
+												fill: #fff;
+											}
+										</style>
+									</defs>
+									<g id="Layer_2" data-name="Layer 2">
+										<g id="Layer_1-2" data-name="Layer 1">
+											<path
+												class="cls-1"
+												d="M4.87,2.9A3,3,0,0,0,2.61,4V0H0V10.41H2.61V9.57a3,3,0,0,0,2.26,1.07c1.81,0,3.27-1.73,3.27-3.87S6.68,2.9,4.87,2.9ZM4.22,8.43A1.61,1.61,0,1,1,5.83,6.82,1.62,1.62,0,0,1,4.22,8.43Z"
+											></path>
+										</g>
+									</g>
+								</svg>
+								<a href="#">blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerBottom">
+					<ul class="footerMenu">
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">이메일무단수집거부</a></li>
+						<li><a href="#">문의하기</a></li>
+					</ul>
+					<a href="mailto:contact@jpinnovation.kr" class="footerEmail"
+						>contact@jpinnovation.kr</a
+					>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

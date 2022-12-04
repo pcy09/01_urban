@@ -1,0 +1,186 @@
+#title {
+	height: 100%;
+	min-height: 480px;
+	background-color: #eee;
+	z-index: 1;
+	position: relative;
+	align-items: flex-end;
+	padding-bottom: 60px;
+	.inner {
+		z-index: 3;
+		position: relative;
+		height: 100%;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		.titleWrap {
+			// background-color: blue;
+			width: 1650px;
+			height: 734px;
+			z-index: 10;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			h2 {
+				color: white;
+				font-size: 3.75rem;
+				line-height: 1.3;
+				font-weight: 800;
+				z-index: 1;
+				overflow: hidden;
+				white-space: nowrap;
+				span.mask {
+					display: block;
+					height: 100%;
+					letter-spacing: -1.1px;
+					animation: titleText 2s 0.5s both;
+				}
+			}
+			@keyframes titleText {
+				0% {
+					transform: translateY(100%);
+					opacity: 0.5;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+			.pcontainer {
+				overflow: hidden;
+				z-index: 4;
+				p.mask {
+					height: 100%;
+					color: white;
+					font-size: 1.5rem;
+					line-height: 1.5;
+					letter-spacing: 0;
+					font-weight: bold;
+					z-index: 2;
+					width: 500px;
+					animation: titleText 1.6s 1s both;
+				}
+			}
+			a.viewPoint {
+				position: relative;
+				line-height: 3;
+				z-index: 5;
+				animation: titleTextA 1.3s 1.6s both;
+			}
+			@keyframes titleTextA {
+				0% {
+					transform: translateY(100%);
+					opacity: 0.5;
+				}
+				100% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
+		.container {
+			position: absolute;
+			background-image: url(../img/video-thumb.jpg);
+			right: 108px;
+			bottom: -60px;
+			width: 1188px;
+			height: 734px;
+			overflow: hidden;
+			iframe {
+				position: relative;
+				right: 0;
+				top: 50%;
+				transform: translatey(-50%);
+				width: 1308.89px;
+				height: 738px;
+			}
+		}
+		a.campaign {
+			position: absolute;
+			display: block;
+			z-index: 6;
+			top: 448px;
+			right: 0px;
+			transform: translatex(50%) translateY(-50%) rotate(90deg) translateX(50%);
+			font-weight: 700;
+			font-size: 0.8125rem;
+			color: #aaa;
+			text-align: center;
+			line-height: 0.8125rem;
+			transition: color 0.5s;
+			letter-spacing: -0.3px;
+		}
+		a.campaign:hover {
+			color: #111;
+		}
+	}
+
+	span.titleaside {
+		position: absolute;
+		// right:calc(10% / 2);
+		right: 3.85%;
+		bottom: 65px;
+		height: 30px;
+		z-index: 7;
+		a.scroll {
+			position: relative;
+			font-size: 0.625rem;
+			font-weight: 750;
+			line-height: 1;
+			letter-spacing: 0.1em;
+			color: #111;
+			cursor: default;
+		}
+		a.scroll::before {
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: block;
+			position: absolute;
+			top: -20px;
+			left: 50%;
+			border: 5px solid;
+			border-left: transparent;
+			border-top: transparent;
+			transform: translateX(-50%) translateY(-10px) rotate(45deg) scale(0.3);
+			color: #111;
+			animation: bscroll 2s 0.2s infinite;
+		}
+		@keyframes bscroll {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+		a.scroll::after {
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: block;
+			position: absolute;
+			top: -30px;
+			left: 50%;
+			border: 5px solid;
+			border-left: transparent;
+			border-top: transparent;
+			transform: translateX(-50%) translateY(-10px) rotate(45deg) scale(0.3);
+			color: #111;
+			animation: bscroll 2s infinite;
+		}
+	}
+}
+
+#title::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 76.72%;
+	height: 100%;
+	background-color: #111111;
+	z-index: 2;
+}
