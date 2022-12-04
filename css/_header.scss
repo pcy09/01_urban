@@ -65,6 +65,7 @@ header {
 						content: "";
 						position: absolute;
 						top: -10px;
+						left: 0;
 						width: 30px;
 						height: 4px;
 						background-color: white;
@@ -73,6 +74,7 @@ header {
 					&::after {
 						position: absolute;
 						bottom: -10px;
+						left: 0;
 						content: "";
 						width: 30px;
 						height: 4px;

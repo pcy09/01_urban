@@ -275,7 +275,12 @@ main {
 			}
 			@media (max-width: 768px) {
 				p.h2 {
-					font-size: 25px;
+					span {
+						display: none;
+					}
+					font-size: 18px;
+					line-height: 1.2;
+					letter-spacing: 0;
 				}
 			}
 		}
