@@ -713,6 +713,9 @@ header.active::before {
   z-index: 2;
 }
 
+main {
+  overflow: hidden;
+}
 main section {
   padding: 120px 0;
 }
@@ -1764,17 +1767,15 @@ footer#footer .inner .footerBottom a.footerEmail:hover {
   }
   #title .inner .container {
     position: relative;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 265/150;
-    background-size: 100%;
-    background-position: center;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 446/252;
   }
   #title .inner .container iframe {
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
