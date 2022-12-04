@@ -30,10 +30,11 @@
 				z-index: 1;
 				overflow: hidden;
 				white-space: nowrap;
+
 				span.mask {
+					letter-spacing: -1.1px;
 					display: block;
 					height: 100%;
-					letter-spacing: -1.1px;
 					animation: titleText 2s 0.5s both;
 				}
 			}
