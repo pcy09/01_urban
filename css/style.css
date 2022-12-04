@@ -1734,6 +1734,7 @@ footer#footer .inner .footerBottom a.footerEmail:hover {
     left: 220px;
     top: 0;
     display: none;
+    z-index: 999;
   }
   header .inner .wgnb ul.gnb li.gnbList:hover ul.gnbSub {
     display: block;
